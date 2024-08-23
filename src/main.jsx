@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { initializeApp } from 'firebase/app'
+import { getAuth, GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyAERVfxYXvjVPaCO7fib_CA1xCCvfjMFkU",
@@ -14,10 +15,17 @@ const firebaseConfig = {
   measurementId: "G-X4YF5QSE12"
 };
 
-initializeApp(firebaseConfig)
+const app = initializeApp(firebaseConfig)
+const auth = getAuth(app)
+const provider = new GoogleAuthProvider()
+
+export const signInWithGoogle = () => {
+  return signInWithPopup(auth, provider)
+}
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>,
 )
+
