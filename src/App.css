@@ -16,7 +16,7 @@ width: calc(100% - 22px);
   margin-bottom: 2rem;
   border: 2px solid blue;
   box-shadow: 0 0 10px blue; /* Glowing blue outline */
-  color: black;
+  color: white;
 }
 
 button {
