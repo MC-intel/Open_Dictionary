@@ -83,10 +83,10 @@ function App() {
               value={newDefinition}
               onChange={(e) => setNewDefinition(e.target.value)}
             />
-            <button onClick={handleAddWord}>Add Word</button>
+            <button onClick={handleAddWord}>Add Word!</button>
           </>
         ) : (
-          <button onClick={handleSignIn}>Sign in with Google to add a word</button>
+          <button onClick={handleSignIn}>Sign in with Google</button>
         )}
       </div>
     </div>
