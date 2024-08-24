@@ -6,14 +6,13 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-.search-section,
-.add-word-section {
-  margin-bottom: 3rem; 
+.search-section {
+  margin-bottom: 5rem; 
 }
 
 input[type="text"] {
   width: calc(100% - 30px); 
-  padding: 1rem; 
+  padding: 1rem;
   margin-bottom: 3rem;
   border: 2px solid blue;
   box-shadow: 0 0 15px blue; 
@@ -49,6 +48,11 @@ button:hover {
   font-size: 1.5rem; 
 }
 
+.add-word-section {
+  margin-top: 5rem; 
+  margin-bottom: 3rem; 
+}
+
 .add-word-section input {
   margin-bottom: 1rem; 
   font-family: "Courier New", Courier, monospace;
@@ -56,7 +60,7 @@ button:hover {
 }
 
 .add-word-section h2 {
-  margin-bottom: 1.5rem; 
+  margin-bottom: 1.5rem;
   font-family: "Courier New", Courier, monospace;
   font-size: 1.8rem; 
 }
