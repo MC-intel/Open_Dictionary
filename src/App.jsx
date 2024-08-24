@@ -50,7 +50,7 @@ function App() {
 
   return (
     <div id="root">
-      <h1>Dictionary</h1>
+      <h1>DICTIONARY:</h1>
       <div className="search-section">
         <input
           type="text"
@@ -68,7 +68,7 @@ function App() {
         )}
       </div>
       <div className="add-word-section">
-        <h2>Add a New Word</h2>
+        <h2>Add a New Word!</h2>
         {user ? (
           <>
             <input
