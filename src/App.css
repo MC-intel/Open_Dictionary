@@ -1,36 +1,38 @@
 #root {
-  max-width: 1200px;
+  max-width: 900px; 
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem; 
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
 
 .search-section,
 .add-word-section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem; 
 }
 
 input[type="text"] {
-  width: calc(100% - 22px);
-  padding: 0.5rem;
-  margin-bottom: 2rem;
+  width: calc(100% - 30px); 
+  padding: 1rem; 
+  margin-bottom: 3rem;
   border: 2px solid blue;
-  box-shadow: 0 0 10px blue; /* Glowing blue outline */
+  box-shadow: 0 0 15px blue; 
   color: white;
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem; 
 }
 
 button {
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  border: 2px solid blue;
-  box-shadow: 0 0 10px blue; /* Glowing blue outline */
+  padding: 1rem 2rem; /* Increased padding */
+  border-radius: 15px; /* Made the button more rounded */
+  border: 3px solid blue; /* Increased border size */
+  box-shadow: 0 0 15px blue; /* Increased the glow size */
   background-color: #FDFD96;
   color: black;
   cursor: pointer;
   transition: background-color 0.5s;
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem; /* Increased font size */
 }
 
 button:hover {
@@ -38,20 +40,23 @@ button:hover {
 }
 
 .definition-section {
-  margin-top: 1rem;
+  margin-top: 2rem; 
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem; 
 }
 
 .definition-section p {
-  font-size: 1.2rem;
+  font-size: 1.5rem; 
 }
 
 .add-word-section input {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem; 
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem; 
 }
 
 .add-word-section h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem; 
   font-family: "Courier New", Courier, monospace;
+  font-size: 1.8rem; 
 }
