@@ -23,7 +23,8 @@ button {
   padding: 0.5rem 1rem;
   border-radius: 10px;
   border: 2px solid red;
-  background-color: #646cff;
+  box-shadow: 0 0 10px blue; /* Glowing blue outline */
+  background-color: #FFFF00;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s;
