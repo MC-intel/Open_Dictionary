@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .search-section,
@@ -11,12 +12,13 @@
 }
 
 input[type="text"] {
-width: calc(100% - 22px);
+  width: calc(100% - 22px);
   padding: 0.5rem;
   margin-bottom: 2rem;
   border: 2px solid blue;
   box-shadow: 0 0 10px blue; /* Glowing blue outline */
   color: white;
+  font-family: "Courier New", Courier, monospace;
 }
 
 button {
@@ -28,6 +30,7 @@ button {
   color: black;
   cursor: pointer;
   transition: background-color 0.5s;
+  font-family: "Courier New", Courier, monospace;
 }
 
 button:hover {
@@ -36,6 +39,7 @@ button:hover {
 
 .definition-section {
   margin-top: 1rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .definition-section p {
@@ -44,8 +48,10 @@ button:hover {
 
 .add-word-section input {
   margin-bottom: 0.5rem;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .add-word-section h2 {
   margin-bottom: 1rem;
+  font-family: "Courier New", Courier, monospace;
 }
