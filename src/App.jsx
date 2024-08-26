@@ -50,15 +50,25 @@ function App() {
 
   return (
     <div id="root">
-      <h1>DICTIONARY:</h1>
+      <div className="signin-section">
+        {!user && (
+          <button onClick={handleSignIn}>
+            <i className="fab fa-google"></i> Sign in with Google
+          </button>
+        )}
+      </div>
       <div className="search-section">
+        <label htmlFor="search">Search for a word:</label>
         <input
+          id="search"
           type="text"
-          placeholder="Search for a word..."
+          placeholder="Enter a word..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button onClick={handleSearch}>
+          <i className="fas fa-search"></i> Search
+        </button>
       </div>
       <div className="definition-section">
         {definition && (
@@ -68,25 +78,31 @@ function App() {
         )}
       </div>
       <div className="add-word-section">
-        <h2>Add a New Word!</h2>
+        <h2>Add a New Word</h2>
         {user ? (
           <>
+            <label htmlFor="new-word">New word:</label>
             <input
+              id="new-word"
               type="text"
-              placeholder="New word..."
+              placeholder="Enter the new word..."
               value={newWord}
               onChange={(e) => setNewWord(e.target.value)}
             />
+            <label htmlFor="new-definition">Definition:</label>
             <input
+              id="new-definition"
               type="text"
-              placeholder="Definition..."
+              placeholder="Enter the definition..."
               value={newDefinition}
               onChange={(e) => setNewDefinition(e.target.value)}
             />
-            <button onClick={handleAddWord}>Add Word!</button>
+            <button onClick={handleAddWord}>
+              <i className="fas fa-plus"></i> Add Word
+            </button>
           </>
         ) : (
-          <button onClick={handleSignIn}>Sign in with Google</button>
+          <p>Please sign in to add a new word.</p>
         )}
       </div>
     </div>
@@ -94,4 +110,3 @@ function App() {
 }
 
 export default App
-
